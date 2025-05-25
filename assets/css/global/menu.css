@@ -1,0 +1,128 @@
+header {
+    position: fixed;
+    width: 18.1%;
+    height: 100%;
+    transition: width 0.3s ease;
+}
+
+header#header__mobile {
+    display: none;
+}
+
+header#header__mobile nav ul li a img.desativado {
+    display: none;
+}
+
+header#header__mobile nav ul li a img.ativado {
+    display: block;
+}
+
+/* Logos */
+header nav figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+header nav figure div img#logo__hc {
+    width: 90%;
+    cursor: pointer;
+}
+
+header nav figure img#logo__menu {
+    width: 30%;
+    cursor: pointer;
+}
+
+header nav figure img#logo__menu__fechado {
+    display: none;
+    width: 30%;
+    cursor: pointer;
+}
+
+/* Linha para separar */
+header nav ul .line {
+    width: 100%;
+    margin-top: .6rem;
+    margin-left: .5rem;
+    margin-bottom: .8rem;
+    border: solid 1px var( --border-line);
+}
+
+/* Links */
+header nav ul li {
+    display: flex;
+    transition: all 0.3s ease-in-out;
+}
+
+header nav ul li:hover {
+    background-color: var(--color-black-04);
+    border-radius: 0.5rem;
+}
+
+header nav ul li a {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: .7rem;
+    color: var(--color-text-menu);
+    font-size: 1.1rem;
+    white-space: nowrap;
+}
+
+header nav ul li a#active {
+    color: var(--color-active);
+}
+
+header nav ul li a img {
+    margin-left: 1.5rem;
+    width: 30px;
+}
+
+/* Responsividade */
+
+/* Celular - Tablet */
+@media (max-width: 1000px) {
+        header {
+        display: none;
+        width: 100%;
+        bottom: 0px;
+    }
+
+    header#header__mobile {
+        position: fixed;
+        display: block;
+        width: 100%;
+        height: 7%; 
+        bottom: 0;
+        background: var(--background-white);
+        border-top: solid 1px var(--border-line);
+        overflow-y: hidden;
+    }
+
+    header#header__mobile nav ul {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    header#header__mobile nav ul li a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        color: black;
+    }
+
+    header#header__mobile nav ul li a img {
+        width: 30px;
+        margin: 0;
+    }
+
+    header#header__mobile nav ul li a span {
+        margin-top: -1.3rem;
+        color: var(--color-text-menu);
+    }
+}

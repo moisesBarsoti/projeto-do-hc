@@ -1,0 +1,26 @@
+:root {
+    /* Backgrounds */
+    --background: #edefef;
+    --background-white: #ffffff;
+
+    /* Colors */
+    --color-active: #0175C2;
+    --color-blue: #0077C8;
+    --color-white: #ffffff;
+    --color-black: #000000;
+    --color-green: #169DA6;
+    --color-grey: #616161;
+    
+
+    /* Components */
+    --border-line: #08080877;
+    --color-text-menu: #3A3A3A;
+    --pdf-color: #07A0A8;
+
+    /* Hovers */
+    --color-black-04: rgba(0, 0, 0, 0.1);
+    --color-green-hover: rgba(7, 160, 168, 0.164);
+    --color-white-button-hover: rgba(255, 255, 255, 0.3);
+    --color-white-placeholder-hover: rgba(255, 255, 255, 0.6);
+
+}

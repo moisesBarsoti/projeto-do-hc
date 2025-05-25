@@ -1,0 +1,12 @@
+body#avisos main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh; /* Adicione isso para garantir que o main ocupe toda a altura */
+}
+
+body#avisos main h1 {
+    font-size: 24px;
+    margin-bottom: 2rem;
+}

@@ -1,0 +1,171 @@
+body#perguntas__frequentes main section#titles {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  border-bottom: solid 1px var(--border-line);
+}
+
+body#perguntas__frequentes main section#titles h1 {
+    border: none;
+    width: 100%;
+}
+
+body#perguntas__frequentes main section#titles ul a li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+    padding: .3rem;
+}
+
+body#perguntas__frequentes main section#titles ul a li:hover {
+    background-color: var(--color-black-04);
+    border-radius: 5px;
+}
+
+body#perguntas__frequentes main section#titles ul a li span {
+    color: var(--color-black);
+    padding-right: .5rem;
+    font-size: 20px;
+}
+
+body#perguntas__frequentes main section#titles ul a li span img {
+    margin-top: .3rem;
+    width: 25px;
+}
+
+/* Section chat bot */
+body#perguntas__frequentes section#chat__bot{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 40px;
+}
+
+body#perguntas__frequentes section#chat__bot div.rectangle {
+  width: 80%;
+}
+
+body#perguntas__frequentes section#chat__bot div.rectangle div.message_box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;  
+}
+
+body#perguntas__frequentes section#chat__bot div.rectangle div.message_box textarea.message {
+  position: center;
+  width: 100%;
+  height: 190px;
+  padding: 1rem;
+  border: solid 2px var(--color-black);
+  border-radius: 15px;
+  font-size: 20px;
+  color: var(--color-black);
+  margin-top: 40px;
+  resize: none;
+}
+
+body#perguntas__frequentes div.line {
+  margin: 1rem 0;
+  width: 100%;
+  border: solid 1px var(--border-line); 
+}
+
+body#perguntas__frequentes button {
+  border: solid var(--color-black) 2px;
+  border-radius: 10px;
+  font-size: large;
+  padding: .5rem 1rem;
+  cursor: pointer;
+}
+
+/* Section PDF */
+body#perguntas__frequentes section#pdf {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem; 
+    margin-top: 1rem;
+}
+
+body#perguntas__frequentes section#pdf div#container__pdf {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+body#perguntas__frequentes main section#pdf div#container__pdf div.block_pdf {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  border: solid var(--pdf-color) 3px;
+  border-radius: 15px;
+  transition: all ease-in-out 0.3s;
+}
+
+body#perguntas__frequentes main section#pdf div#container__pdf div.block_pdf:hover{
+  background-color: var(--color-green-hover);
+}
+
+body#perguntas__frequentes main section#pdf div#container__pdf div.block_pdf a {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+body#perguntas__frequentes main section#pdf div#container__pdf div.block_pdf p {
+  font-size: 20px;
+  padding: 0 1rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1.2rem;
+  color: var(--color-black);
+}
+
+body#perguntas__frequentes main section#pdf div#container__pdf div.block_pdf img {
+  width: 100px;
+  margin-top: 1rem;
+}
+
+/* Responsividade */
+@media (max-width: 1200px) {
+body#perguntas__frequentes section#pdf div#container__pdf {
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 5rem;
+}
+
+body#perguntas__frequentes main section#pdf div#container__pdf div.block_pdf {
+  width: 80%;
+}
+
+body#perguntas__frequentes main section#titles ul a li span {
+  padding-right: 1.5rem;
+}
+}
+
+@media (max-width: 490px) {
+  body#perguntas__frequentes section#pdf div#container__pdf {
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+
+body#perguntas__frequentes main section#pdf div#container__pdf div.block_pdf {
+  width: 80%;
+}
+
+body#perguntas__frequentes main section#titles ul a li span {
+  padding-right: 1.5rem;
+}
+}

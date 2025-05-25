@@ -1,0 +1,79 @@
+body#login div.login-container {
+  background: linear-gradient(to right, #008ACB, #139DA5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+body#login div.login-container form.login-form {
+  color: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+body#login div.login-container form.login-form h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto 20px auto;
+}
+
+body#login div.login-container form.login-form label {
+  display: block;
+  margin-bottom: 5px;
+  margin-top: 15px;
+  font-weight: bold;
+  color: var(--color-white);
+  font-size: 22.5px;
+}
+
+body#login div.login-container form.login-form input {
+    color: var(--color-white);
+  font-size: 22.5px;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid var(--color-white);
+  margin-bottom: 20px;
+  outline: none;
+}
+
+body#login div.login-container form.login-form input::placeholder {
+  color: var(--color-white-placeholder-hover);
+  font-size: 22.5px;
+}
+
+body#login div.login-container form.login-form button {
+  border: 2px solid var(--color-white);
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 15px;
+  background: transparent;
+  color: var(--color-white);
+  padding: 10px 20px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body#login div.login-container form.login-form button:hover {
+  background-color: var(--color-white-button-hover);
+  color: white;
+}
+
+body#login div.login-container form.login-form div.login-links a {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  padding: 0 5px;
+  color: rgba(255, 255, 255, 0.6);
+  transition: color 0.3s ease;
+}
+
+body#login div.login-container form.login-form div.login-links a:hover {
+    color: rgba(255, 255, 255, 0.3);
+}
